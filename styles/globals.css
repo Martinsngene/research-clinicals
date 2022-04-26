@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap");
+
+html,
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.heroSection {
+  background: center / cover no-repeat url("/media/hero.png");
+}
+
+.aboutSection {
+  background: top / cover no-repeat url("/media/abouthero.png");
+}
+
+.faqSection {
+  background: top / cover no-repeat url("/media/faq.png");
+}
+
+.welcomeSection {
+  background: top / cover no-repeat url("/media/abouthero.png");
+}
+
+.patientSection {
+  background: center / cover no-repeat url("/media/patientshero.png");
+}
+
+.eventSection {
+  background: center / cover no-repeat url("/media/eventshero.png");
+}
+
+.studySection {
+  background: center / cover no-repeat url("/media/studyhero.png");
+}
+
+.contactSection {
+  background: center / cover no-repeat url("/media/map.png");
+}
