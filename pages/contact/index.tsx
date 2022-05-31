@@ -12,7 +12,6 @@ const Contact = () => {
   return (
     <Container>
       <Navbar />
-
       <CustomSection className="contactSection h-[150vh] flex flex-col items-center justify-center relative">
         <CustomSection className="absolute top-[30%] left-[15%] backdrop-blur-[5px] w-[417px] h-[323px] rounded-[10px] bg-[rgba(0,_16,_17,_0.2)] flex items-center justify-center">
           <ul>

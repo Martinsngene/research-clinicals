@@ -10,7 +10,7 @@ interface ImagePropsI {
 const CustomImage = ({ className, src, width, height }: ImagePropsI) => {
   return (
     <div className={className}>
-      <Image src={src} width={width} height={height} />
+      <Image src={src} width={width} height={height} alt="" />
     </div>
   );
 };

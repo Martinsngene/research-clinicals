@@ -7,8 +7,8 @@ const Navbar = () => {
   const navStyles = "";
   return (
     <div className="bg-[#fff] h-[4rem] fixed z-10 w-[100%] flex items-center justify-between px-4">
-      <div className="logo pl-[1rem]">
-        <CustomImage src="/media/navlogo.png" width={81} height={44} />
+      <div className="logo pl-[1rem] flex items-center justify-center">
+        <CustomImage src="/media/logo.png" width={80} height={50} />
       </div>
       <ul className="flex items-center justify-between w-[50%]">
         {NavbarSchema.map((item, index) => (

@@ -17,7 +17,7 @@ const CustomLink = ({
 }: LinkProps) => {
   return (
     <div className={className} onClick={onClick}>
-      <Link href={`${href}`}>
+      <Link href={`${href}`} passHref={true}>
         <span className={textStyle}>{children}</span>
       </Link>
     </div>

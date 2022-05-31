@@ -16,7 +16,7 @@ const Footer = () => {
             <li>
               <CustomImage
                 className="mb-[1rem]"
-                src="/media/footerlogo.png"
+                src="/media/logo.png"
                 width={116}
                 height={63}
               />
@@ -86,10 +86,10 @@ const Footer = () => {
       <div className="bg-[#430990] w-full h-[3.5rem] flex items-center justify-between p-4">
         <div className="text-[1rem] text-[#fff] font-[700] flex items-center justify-center">
           <CustomImage src="/media/copyright.png" width={23} height={23} />
-          <span className="ml-2">2022. Gadolin-Research</span>
+          <span className="ml-2">2022. Research Clinical</span>
         </div>
         <div className="text-[1rem] text-[#fff] font-[300]">
-          NotPowered by Kleekit
+          Powered by Trinus Enterprises
         </div>
       </div>
     </div>

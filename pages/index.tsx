@@ -91,20 +91,20 @@ const Home: NextPage = () => {
         <div className="h-[200px] bg-[#F2F2F2]"></div>
         <div className="absolute p-[1.5rem] top-[45%] left-[10%] w-[80%] bg-[#fff] h-[300px]">
           <h2 className="text-[#430990] text-[2rem] mb-[0.6rem] font-[700]">
-            Welcome to Gadolin Research
+            Welcome to Research Clinical
           </h2>
           <p className="mb-[0.5rem] text-[18px]">
-            At Gadolin we are working hard to improve the quality of life and
-            health of our patients. We conduct clinical research studies that
-            help make groundbreaking medicine accessible so that people
-            everywhere can benefit.
+            At Research Clinical we are working hard to improve the quality of
+            life and health of our patients. We conduct clinical research
+            studies that help make groundbreaking medicine accessible so that
+            people everywhere can benefit.
           </p>
           <p className="text-[18px]">
-            Gadolin is affiliated with some of the area's best physicians; from
-            family practitioners to specialists, we have a wide range of
-            knowledge and experience. With our staff of skilled health care
-            professionals, you can rest assured that we are committed to your
-            safety and well-being every step of the way.
+            Research Clinical is affiliated with some of the area&apos;s best
+            physicians; from family practitioners to specialists, we have a wide
+            range of knowledge and experience. With our staff of skilled health
+            care professionals, you can rest assured that we are committed to
+            your safety and well-being every step of the way.
           </p>
           <CustomLink
             textStyle="flex items-center font-bold"

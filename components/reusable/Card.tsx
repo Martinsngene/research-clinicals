@@ -14,7 +14,7 @@ const Card = ({ children, src, buttonLabel, link }: CardPropsI) => {
   return (
     <div className="bg-[#fff] w-[250px] p-2 hover:shadow-2xl mb-[1rem] md:mb-0">
       <div className="cardImgContainer w-full flex  items-center justify-center bg-black">
-        <Image src={src} width={300} height={200} />
+        <Image src={src} width={300} height={200} alt="" />
       </div>
       <div className="cardDescriptionContainer p-2">
         <p>{children}</p>
