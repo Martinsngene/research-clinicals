@@ -1,10 +1,48 @@
+import { useState } from "react";
+
 interface LayoutPropsI {
   children: React.ReactNode;
   className?: string;
 }
 
 const Container = ({ children, className }: LayoutPropsI) => {
-  return <div className={className}>{children}</div>;
+  const [showBot, setShowBot] = useState(false);
+  return (
+    <div className={`${className}`}>
+      {children}
+      <div className="chatbot fixed bottom-[5%] right-[2%]">
+        {showBot ? (
+          <div>
+            <iframe
+              allow="microphone;"
+              width="720"
+              height="720"
+              src="https://console.dialogflow.com/api-client/demo/embedded/cbd6db21-1e8a-43fe-a517-7805bf9aa6eb"
+            ></iframe>
+            <button
+              onClick={() => setShowBot(false)}
+              className="fixed bottom-[75%] right-[5%] bg-[transparent] z-50 text-[#fff] text-[2rem]"
+            >
+              X
+            </button>
+          </div>
+        ) : (
+          <div
+            onClick={() => setShowBot(true)}
+            className="bg-[#1B0538] w-[145px] h-[145px] rounded-full flex justify-center items-center"
+          >
+            <img
+              width={120}
+              height={120}
+              className="rounded-full"
+              src="/media/bot.jpg"
+              alt="chatbot figure"
+            />
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Container;
