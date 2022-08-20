@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 interface LayoutPropsI {
@@ -31,7 +32,7 @@ const Container = ({ children, className }: LayoutPropsI) => {
             onClick={() => setShowBot(true)}
             className="bg-[#1B0538] w-[145px] h-[145px] rounded-full flex justify-center items-center"
           >
-            <img
+            <Image
               width={120}
               height={120}
               className="rounded-full"
