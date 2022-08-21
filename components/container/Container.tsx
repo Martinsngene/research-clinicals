@@ -16,13 +16,13 @@ const Container = ({ children, className }: LayoutPropsI) => {
           <div>
             <iframe
               allow="microphone;"
-              width="720"
-              height="720"
+              width="520"
+              height="520"
               src="https://console.dialogflow.com/api-client/demo/embedded/cbd6db21-1e8a-43fe-a517-7805bf9aa6eb"
             ></iframe>
             <button
               onClick={() => setShowBot(false)}
-              className="fixed bottom-[75%] right-[5%] bg-[transparent] z-50 text-[#fff] text-[2rem]"
+              className="fixed bottom-[77%] right-[5%] bg-[transparent] z-50 text-[#fff] text-[2rem]"
             >
               X
             </button>
@@ -30,11 +30,11 @@ const Container = ({ children, className }: LayoutPropsI) => {
         ) : (
           <div
             onClick={() => setShowBot(true)}
-            className="bg-[#1B0538] w-[145px] h-[145px] rounded-full flex justify-center items-center"
+            className="bg-[#1B0538] w-[125px] h-[125px] rounded-full flex justify-center items-center"
           >
             <Image
-              width={120}
-              height={120}
+              width={100}
+              height={100}
               className="rounded-full"
               src="/media/bot.jpg"
               alt="chatbot figure"
