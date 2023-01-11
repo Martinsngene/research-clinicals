@@ -2,8 +2,6 @@
 
 import type { NextPage } from "next";
 import Container from "../components/container/Container";
-import Footer from "../components/navigation/Footer";
-import Navbar from "../components/navigation/Navbar";
 import Card from "../components/reusable/Card";
 import CustomButton from "../components/reusable/CustomButton";
 import CustomLink from "../components/reusable/CustomLink";
@@ -35,7 +33,6 @@ const Home: NextPage = () => {
   ];
   return (
     <Container>
-      <Navbar />
       <CustomSection className='heroSection h-[120vh] lg:relative flex items-center justify-center'>
         <CustomSection className='bg-[rgba(0,_0,_0,_0.06] backdrop-blur-[2px] w-full lg:w-[50%] lg:absolute lg:top-[25%] lg:left-[7%] p-8'>
           <h1 className='text-[#F1F1F1] font-bold text-[2.5rem]'>
@@ -169,7 +166,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </CustomSection>
-      <Footer />
     </Container>
   );
 };
