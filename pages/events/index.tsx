@@ -9,8 +9,10 @@ import CustomSectionHeader from "../../components/reusable/CustomSectionHeader";
 const Events = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] eventSection'> </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
+      <CustomSection className='h-[50vh] lg:h-[75vh] eventSection'>
+        {" "}
+      </CustomSection>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
         <CustomSectionHeader
           headerText='JOIN OUR EVENTS'
           IconWidth={20}

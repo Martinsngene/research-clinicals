@@ -10,14 +10,16 @@ import { AiOutlineMail } from "react-icons/ai";
 const About = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] faqSection'> </CustomSection>
+      <CustomSection className='h-[50vh] lg:h-[75vh] faqSection'>
+        {" "}
+      </CustomSection>
 
       <div className='flex items-center justify-center mt-[2rem]'>
-        <h1 className='text-[#430990] font-[800] text-[2rem] mr-[0.3rem]'>
+        <h1 className='text-[#430990] font-[800] text-[1.5rem] text-center lg:text-[2rem] mr-[0.3rem]'>
           FREQUENTLY ASKED QUESTIONS
         </h1>
         <CustomImage
-          className='mt-[1rem]'
+          className='mt-[1rem] hidden lg:block'
           src='/media/dot.png'
           width={20}
           height={20}
@@ -45,7 +47,7 @@ const About = () => {
         <h3 className='text-[#001011] font-[700]'>
           Can&apos;t find a solution?
         </h3>
-        <p className='text-[#555555] text-[1rem] font-[400]'>
+        <p className='text-[#555555] text-center text-[1rem] font-[400]'>
           Send a mail about your problem, we&apos;d love to hear from you.
         </p>
         <p className='text-[#430990] flex items-center justify-center text-[1rem]'>

@@ -10,8 +10,10 @@ import CustomSectionHeader from "../../../components/reusable/CustomSectionHeade
 const Study = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] studySection'> </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
+      <CustomSection className='h-[50vh] lg:h-[75vh] studySection'>
+        {" "}
+      </CustomSection>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex flex-col items-center justify-center pt-4 lg:pt-[3rem]'>
         <CustomSectionHeader
           headerText='COVID-19 RESEARCH'
           IconWidth={20}
@@ -27,15 +29,15 @@ const Study = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </CustomSectionHeader>
       </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] pb-[10rem] w-[100%] flex flex-col items-center justify-center'>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] pb-8 lg:pb-[10rem] w-[100%] flex flex-col items-center justify-center'>
         <CustomImage
           src='/media/recCovid.png'
           className='w-[80%]'
           width={1180}
           height={545}
         />
-        <CustomSection className='flex flex-col items-center justify-center mt-[7rem]'>
-          <div className='w-[80%] flex items-center justify-center mb-[5rem]'>
+        <CustomSection className='flex flex-col items-center justify-center mt-8 lg:mt-[7rem]'>
+          <div className='w-[80%] flex items-center justify-center mb-8 lg:mb-[5rem]'>
             <p className='text-[1rem] lg:text-[1.4rem] font-[400]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -53,7 +55,7 @@ const Study = () => {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div className='w-[80%] flex items-center justify-center mb-[5rem]'>
+          <div className='w-[80%] flex items-center justify-center mb-8 lg:mb-[5rem]'>
             <p className='text-[1rem] lg:text-[1.4rem] font-[400]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -72,7 +74,7 @@ const Study = () => {
             </p>
           </div>
 
-          <div className='w-[80%] flex items-center justify-center mb-[5rem]'>
+          <div className='w-[80%] flex items-center justify-center mb-8 lg:mb-[5rem]'>
             <p className='text-[1rem] lg:text-[1.4rem] font-[400]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -110,7 +112,7 @@ const Study = () => {
             <CustomButton
               className='bg-[#0C0D27] hover:bg-[#F64740] px-[0.5rem] py-[0.6rem] font-[700] transition w-[6.89rem] flex items-center justify-center mt-[2rem]'
               textStyle='text-[#fff]'>
-              <Link href={"/study"} passHref={true}>
+              <Link href={"/"} passHref={true}>
                 Join Study
               </Link>
             </CustomButton>

@@ -1,8 +1,6 @@
 /** @format */
 
 import Container from "../../components/container/Container";
-import Footer from "../../components/navigation/Footer";
-import Navbar from "../../components/navigation/Navbar";
 import CustomImage from "../../components/reusable/CustomImage";
 import CustomSection from "../../components/reusable/CustomSection";
 import CustomSectionHeader from "../../components/reusable/CustomSectionHeader";
@@ -10,10 +8,12 @@ import CustomSectionHeader from "../../components/reusable/CustomSectionHeader";
 const About = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] aboutSection'> </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
+      <CustomSection className='h-[50vh] lg:h-[75vh] aboutSection'>
+        {" "}
+      </CustomSection>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex flex-col items-center justify-center pt-4 lg:pt-[3rem]'>
         <CustomSectionHeader
-          headerText='GADALOIN'
+          headerText='RESEARCH CLINICALS'
           IconWidth={20}
           IconSrc='/media/dot.png'
           IconHeight={20}
@@ -35,7 +35,7 @@ const About = () => {
             height={456}
           />
         </div>
-        <div className='w-[90%] flex items-center justify-center mb-[5rem]'>
+        <div className='w-[90%] flex items-center justify-center mb-8 lg:mb-[5rem]'>
           <p className='text-[1rem] lg:text-[1.4rem] font-[400]'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -72,10 +72,10 @@ const About = () => {
           </p>
         </div>
       </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] pb-[10rem] w-[100%] flex items-center justify-center pt-[10rem]'>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] px-4 lg:px-0 py-8 lg:py-[10rem] w-[100%] flex items-center justify-center'>
         <CustomImage
           src='/media/pictureFive.png'
-          className='w-[80%]'
+          className='w-full lg:w-[80%]'
           width={1180}
           height={545}
         />

@@ -9,8 +9,10 @@ import CustomSectionHeader from "../../components/reusable/CustomSectionHeader";
 const FindStudy = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] studySection'> </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
+      <CustomSection className='h-[50vh] lg:h-[75vh] studySection'>
+        {" "}
+      </CustomSection>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
         <CustomSectionHeader
           headerText='FIND A STUDY'
           IconWidth={20}

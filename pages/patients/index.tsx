@@ -10,8 +10,10 @@ import CustomSectionHeader from "../../components/reusable/CustomSectionHeader";
 const Patients = () => {
   return (
     <Container>
-      <CustomSection className='h-[75vh] patientSection'> </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
+      <CustomSection className='h-[50vh] lg:h-[75vh] patientSection'>
+        {" "}
+      </CustomSection>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex flex-col items-center justify-center pt-[3rem]'>
         <CustomSectionHeader
           headerText='LET US TELL YOU WHY'
           IconWidth={20}
@@ -36,7 +38,7 @@ const Patients = () => {
           />
         </div>
         <div>
-          <h2 className='mb-[2rem] text-[2rem] font-[700]'>
+          <h2 className='mb-[2rem] text-[1.5rem] lg:text-[2rem] font-[700]'>
             Find a Study to Join
           </h2>
         </div>

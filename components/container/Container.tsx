@@ -24,7 +24,7 @@ const Container = ({ children, className }: LayoutPropsI) => {
       <Navbar onClick={toggleMenu} />
       <div className={`${className}`}>
         {showMenu && (
-          <div className='bg-[#fff] flex items-start justify-center h-full top-[4rem] fixed z-10 w-[100%]'>
+          <div className='bg-[#fff] flex items-start justify-center h-full top-[62px] fixed z-10 w-[100%] pt-8'>
             <ul className='flex flex-col items-center justify-between w-[80%] h-1/2'>
               {NavbarSchema.map((item, index) => (
                 <li
@@ -77,7 +77,7 @@ const Container = ({ children, className }: LayoutPropsI) => {
           )}
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

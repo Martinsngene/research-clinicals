@@ -9,28 +9,9 @@ import CustomSection from "../components/reusable/CustomSection";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import CustomImage from "../components/reusable/CustomImage";
+import { CardMockData } from "../components/mockdata/MockData";
 
 const Home: NextPage = () => {
-  const CardMockData = [
-    {
-      url: "/media/cardImgOne.png",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      buttonLabel: "Read",
-    },
-    {
-      url: "/media/cardImgOne.png",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      buttonLabel: "Read",
-    },
-    {
-      url: "/media/cardImgOne.png",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      buttonLabel: "Read",
-    },
-  ];
   return (
     <Container>
       <CustomSection className='heroSection h-[120vh] lg:relative flex items-center justify-center'>
@@ -38,11 +19,13 @@ const Home: NextPage = () => {
           <h1 className='text-[#F1F1F1] font-bold text-[2.5rem]'>
             Better Health Through <br /> Quality Research
           </h1>
-          <CustomButton
-            className='flex items-center justify-center bg-[#430990] w-[150px] hover:bg-[#F64740] px-[1.3rem] py-[0.7rem] mt-[2rem] font-[700] transition'
-            textStyle='text-[#fff]'>
-            Join a Study
-          </CustomButton>
+          <Link href='/studies'>
+            <CustomButton
+              className='flex items-center justify-center bg-[#430990] w-[150px] hover:bg-[#F64740] px-[1.3rem] py-[0.7rem] mt-[2rem] font-[700] transition'
+              textStyle='text-[#fff]'>
+              Join a Study
+            </CustomButton>
+          </Link>
         </CustomSection>
       </CustomSection>
 
@@ -83,8 +66,8 @@ const Home: NextPage = () => {
         </div>
       </CustomSection>
 
-      <CustomSection className='pb-[3rem] bg-[#F2F2F2] lg:relative'>
-        <div className='welcomeSection w-[100%] h-[450px]'></div>
+      <CustomSection className='pb-[3rem] bg-white lg:bg-[#F2F2F2] lg:relative'>
+        <div className='welcomeSection hidden lg:block w-[100%] h-[450px]'></div>
         <div className='h-[200px] hidden lg:block bg-[#F2F2F2]'></div>
         <div className='lg:absolute p-[1.5rem] lg:top-[45%] lg:left-[10%] w-full lg:w-[80%] bg-[#fff] h-full lg:h-[300px]'>
           <h2 className='text-[#430990] text-[2rem] mb-[0.6rem] font-[700]'>
@@ -136,15 +119,19 @@ const Home: NextPage = () => {
           </CustomButton>
         </div>
       </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex items-center justify-center'>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex items-center justify-center'>
         <div className='w-[100%] flex flex-col items-center justify-center'>
-          <h2 className='font-bold text-[2.13rem] my-12'>
+          <h2 className='font-bold text-[1.5rem] lg:text-[2.13rem] my-4 lg:my-12'>
             Getting Started is Easy
           </h2>
           <div className='flex items-center justify-center'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-[1rem]'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-[1rem]'>
               {CardMockData.map((item, index) => (
-                <Card key={index} src={item.url} buttonLabel={item.buttonLabel}>
+                <Card
+                  key={index}
+                  link='/'
+                  src={item.url}
+                  buttonLabel={item.buttonLabel}>
                   {item.description}
                 </Card>
               ))}
@@ -152,13 +139,19 @@ const Home: NextPage = () => {
           </div>
         </div>
       </CustomSection>
-      <CustomSection className='bg-[#F2F2F2] flex items-center justify-center pb-[3rem]'>
+      <CustomSection className='bg-white lg:bg-[#F2F2F2] flex items-center justify-center pb-[3rem]'>
         <div className='w-[100%] flex flex-col items-center justify-center'>
-          <h2 className='font-bold text-[2.13rem] my-12'>Upcoming Events</h2>
+          <h2 className='font-bold text-[1.5rem] lg:text-[2.13rem] my-4 lg:my-12'>
+            Upcoming Events
+          </h2>
           <div className='flex items-center justify-center'>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-[1rem]'>
+            <div className='grid grid-cols-2 md:grid-cols-3 gap-[1rem]'>
               {CardMockData.map((item, index) => (
-                <Card key={index} src={item.url} buttonLabel={item.buttonLabel}>
+                <Card
+                  key={index}
+                  link='/'
+                  src={item.url}
+                  buttonLabel={item.buttonLabel}>
                   {item.description}
                 </Card>
               ))}
