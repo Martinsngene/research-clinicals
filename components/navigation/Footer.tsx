@@ -93,7 +93,8 @@ const Footer = () => {
           <span className='ml-2'>2022. Research Clinical</span>
         </div>
         <div className='text-[0.75rem] lg:text-[1rem] text-[#fff] font-[300]'>
-          Made with 🔥🔥🔥 by Martins Ngene
+          {/* Made with 🔥🔥🔥 by Martins Ngene */}
+          All Rights Reserved.
         </div>
       </div>
     </div>
